@@ -1,1 +1,20 @@
-
+{
+  "name": "automation-quantix-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript POM framework for regression testing",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3"
+  }
+}
